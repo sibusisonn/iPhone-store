@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to SN iPhone Trading Store</h1>
+    </header>
+    
+    <main>
+        <section class="product-upload">
+            <h2>Upload iPhone Images</h2>
+            <form id="upload-form">
+                <input type="file" id="imageUpload" accept="image/*" multiple>
+                <button type="button" onclick="uploadImages()">Upload</button>
+            </form>
+            <div id="image-preview"></div>
+        </section>
+        
+        <section class="contact-details">
+            <h2>Contact Details</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="button" onclick="submitContact()">Submit</button>
+            </form>
+            <div id="contact-response"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
